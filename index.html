@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>HOSPEDAGEM</h1>
+            <menu class="acommodation__filter">
+                <p>Selecione o tipo de viagem</p>
+                <input type="radio" id="type-travel-travel" name="type-travel" value="type-travel-travel" checked="checked">
+                <label for="type-travel-travel">Viagem</label>
+                
+                <input type="radio" id="type-travel-tourism" name="type-travel" value="type-travel-tourism" >
+                <label for="type-travel-tourism">Turismo </label>
+
+                <input type="radio" id="type-travel-work" name="type-travel" value="type-travel-work">
+                <label for="type-travel-work">Trabalho </label>
+            </menu>
+            <menu class="acommodation__filter">
+                <div>
+                    <label for="filter-state">Selecione a localidade</label>
+                    <select id="filter-state" required>
+                        <option value="0">Selecione uma opção</option>
+                        <option value="AC">
+                            Acre
+                        </option>
+                        <option value="AL">
+                            Alagoas
+                        </option>
+                        <option value="AP">
+                            Amapá
+                        </option>
+                        <option value="AM">
+                            Amazonas
+                        </option>
+                        <option value="BA">
+                            Bahia
+                        </option>
+                        <option value="CE">
+                            Ceará
+                        </option>
+                        <option value="ES">
+                            Espírito Santo
+                        </option>
+                        <option value="GO">
+                            Goiás
+                        </option>
+                        <option value="MA">
+                            Maranhão
+                        </option>
+                        <option value="MT">
+                            Mato Grosso
+                        </option>
+                        <option value="MS">
+                            Mato Grosso do Sul
+                        </option>
+                        <option value="MG">
+                            Minas Gerais
+                        </option>
+                        <option value="PA">
+                            Pará
+                        </option>
+                        <option value="PB">
+                            Paraíba
+                        </option>
+                        <option value="PR">
+                            Paraná
+                        </option>
+                        <option value="PE">
+                            Pernambuco
+                        </option>
+                        <option value="PI">
+                            Piauí
+                        </option>
+                        <option value="RJ">
+                            Rio de Janeiro
+                        </option>
+                        <option value="RN">
+                            Rio Grande do Norte
+                        </option>
+                        <option value="RS">
+                            Rio Grande do Sul
+                        </option>
+                        <option value="RO">
+                            Rondônia
+                        </option>
+                        <option value="RR">
+                            Roraima
+                        </option>
+                        <option value="SC">
+                            Santa Catarina
+                        </option>
+                        <option value="SP">
+                            São Paulo
+                        </option>
+                        <option value="SE">
+                            Sergipe
+                        </option>
+                        <option value="TO">
+                            Tocantins
+                        </option>
+                        <option value="DF">
+                            Distrito Federal
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="filter-date-time-checkin">Selecione a data de chegada</label>
+                    <input type="datetime-local" id="filter-date-time-checkin"
+                        name="filter-date-time-checkin" value="2021-10-01T00:00"
+                        min="2021-10-15T00:00" max="2021-12-00T00:00">
+                </div>
+                <div>
+                    <label for="filter-date-time-checkout">Selecione a data de saída</label>
+                    <input type="datetime-local" id="filter-date-time-checkout"
+                        name="filter-date-time-checkout" value="2021-10-01T00:00"
+                        min="2021-10-15T00:00" max="2021-12-00T00:00">
+                </div>
+            </menu>
+        </section>
+    </header>
+    <main>
+        <p>São Paulo</p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
