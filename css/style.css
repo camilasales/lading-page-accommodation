@@ -26,7 +26,7 @@ h1{
     height: 40vh;   
 }
 
-p, label, span{
+p, label, span, h2{
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
 }
@@ -76,7 +76,7 @@ main{
     padding: 1% 5% 4% 5%;
 }
 
-main p{
+main h2{
     font-size: 2em;
     height: 20vh;
     display: flex;
@@ -84,28 +84,29 @@ main p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.accommodation__location{
+.accommodation__locations__list{
     display: flex;
-    align-items: top;
     justify-content: space-between;
 }
 
-.accommodation__location p{
-    height: 15%;
-    font-size: 1.5em;
-    margin-bottom: 8px;
-}
-
-.accommodation__location__image, .accommodation__location__description{
-    width: 50%;
-    margin: 3px;
-}
-
-.accommodation__location img{
-    width: 40vw;
-    border-radius: 20px;
+.accommodation__location{
     margin-right: 20px;
 }
+
+.accommodation__location *{
+    height: 63vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.accommodation__location__text{
+    position: absolute;
+    background-color: #0000006b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media (max-width: 1200px){
     html{
@@ -114,18 +115,7 @@ main p{
     .acommodation__filter:last-child div{
         margin-bottom: 10px;
     }
-    .accommodation__location{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    .accommodation__location img{
-        width: 60vw;
-    }
 
-    .accommodation__location__image, .accommodation__location__description{
-        width: auto;
-    }
 }
 
 @media (max-width: 870px){
@@ -138,6 +128,7 @@ main p{
     h1{
         height: 20vh;
     }
+   
 }
 
 @media (max-width: 640px){
@@ -147,21 +138,25 @@ main p{
 
     .acommodation__filter:last-child{
         flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        top: 80px;
         height: auto;
-        padding: 10px;
     }
 
     header{
         margin-bottom: 12vh;
     }
 
-    main p{
+    main h2{
         font-size: 2em;
         height: 10vh;
+    }
+
+    .accommodation__locations__list{
+        flex-direction: column;
+    }
+
+    .accommodation__location *{
+        height: 60vh;
+        width: 90vw;
     }
 }
 
