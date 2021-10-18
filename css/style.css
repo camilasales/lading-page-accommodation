@@ -26,7 +26,7 @@ h1{
     height: 40vh;   
 }
 
-p, label, span, h2{
+p, label, span, h2, strong{
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
 }
@@ -87,6 +87,7 @@ main h2{
 .accommodation__locations__list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .accommodation__location{
@@ -95,7 +96,7 @@ main h2{
 
 .accommodation__location *{
     height: 63vh;
-    width: 30vw;
+    width: 28vw;
     border-radius: 10px;
 }
 
@@ -105,6 +106,7 @@ main h2{
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 
@@ -116,9 +118,11 @@ main h2{
         margin-bottom: 10px;
     }
 
+   
+
 }
 
-@media (max-width: 870px){
+@media (max-width: 1000px){
     html{
         font-size: 13px;
     }
@@ -129,6 +133,11 @@ main h2{
         height: 20vh;
     }
    
+    .accommodation__location *{
+        height: 60vh;
+        width: 42vw;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 640px){
@@ -169,8 +178,8 @@ main h2{
         height: 15vh;
     }
 
-    p, label, span{
-        font-size: 2em;
+    p, label, span, strong{
+        font-size: 2.5em;
     }
 
 }
